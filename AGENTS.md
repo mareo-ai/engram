@@ -1,7 +1,7 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-- `analyzer.ts`/`analyzer.test.ts`: 记忆抽取逻辑与测试。
+- `extractor.ts`/`extractor.test.ts`: 记忆抽取逻辑与测试。
 - `index.ts`: 入口（目前只加载 dotenv）。
 - `package.json`/`bun.lock`: Bun 项目依赖与锁文件。
 - `.env.example`: 示例环境变量。
@@ -15,7 +15,7 @@
 ## Coding Style & Naming Conventions
 - 语言：TypeScript（ESM）。
 - 缩进：2 空格。
-- 文件命名：小写/中横线或驼峰与现有文件保持一致（如 `analyzer.ts`）。
+- 文件命名：小写/中横线或驼峰与现有文件保持一致（如 `extractor.ts`）。
 - 类型与常量：`PascalCase` 类型名，`SCREAMING_SNAKE_CASE` 常量名。
 - 格式化：目前未配置专用格式化/ lint 工具；保持与现有风格一致。
 

@@ -1,7 +1,7 @@
 import "dotenv/config";
 
 import { expect, test } from "bun:test";
-import { extractMemories, type ConversationMessage } from "@/analyzer";
+import { extractMemories, type ConversationMessage } from "@/extractor";
 
 const apiKey = process.env.DEEPSEEK_API_KEY || "";
 const DEFAULT_MODEL = "deepseek-chat";

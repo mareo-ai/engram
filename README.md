@@ -61,8 +61,8 @@ DEEPSEEK_API_KEY=xxx bun test
 ```
 
 ## Project Structure
-- `analyzer.ts`: LLM-based memory extraction.
-- `analyzer.test.ts`: Bun tests.
+- `extractor.ts`: LLM-based memory extraction.
+- `extractor.test.ts`: Bun tests.
 - `index.ts`: package entry.
 
 ## Roadmap

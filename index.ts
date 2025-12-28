@@ -6,4 +6,4 @@ export {
   type MemoryCandidate,
   type ExtractMemoriesOptions,
   type SUPPORT_MODEL,
-} from "./analyzer";
+} from "./extractor";
