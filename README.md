@@ -39,6 +39,24 @@ const memories = await extractMemories(messages, {
 console.log(memories);
 ```
 
+## Store + Merge Flow
+```ts
+import { extractMemories, mergeMemories, InMemoryStore } from "@/index";
+
+const store = new InMemoryStore();
+const userId = "user-123";
+
+const candidates = await extractMemories(messages, {
+  apiKey: process.env.DEEPSEEK_API_KEY!,
+});
+
+const existing = await store.get(userId);
+const merged = mergeMemories(existing, candidates ?? [], { maxMemories: 200 });
+await store.put(userId, merged);
+
+const stored = await store.get(userId);
+```
+
 To switch providers/models:
 ```ts
 await extractMemories(messages, {

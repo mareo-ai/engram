@@ -9,6 +9,9 @@
   "files": [
     "index.ts",
     "extractor.ts",
+    "memory.ts",
+    "merge.ts",
+    "store",
     "llm-client.ts",
     "README.md",
     "LICENSE",

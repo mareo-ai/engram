@@ -3,6 +3,7 @@ import {
   type ChatMessage,
   type LLMProvider,
 } from "./llm-client";
+import type { MemoryType } from "./memory";
 
 type MessageRole = "user" | "assistant";
 
@@ -12,8 +13,6 @@ export type ConversationMessage = {
   role: MessageRole;
   message: string;
 };
-
-type MemoryType = "profile" | "project" | "goal" | "preference" | "temp";
 
 export type MemoryCandidate = {
   type: MemoryType;

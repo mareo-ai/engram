@@ -9,6 +9,19 @@ export {
 } from "./extractor";
 
 export {
+  mergeMemories,
+  type MergeOptions,
+} from "./merge";
+
+export {
+  type MemoryRecord,
+  type MemoryStore,
+  type MemoryType,
+} from "./memory";
+
+export { InMemoryStore } from "./store/in-memory";
+
+export {
   createChatCompletion,
   type ChatCompletionRequest,
   type ChatCompletionResponse,
